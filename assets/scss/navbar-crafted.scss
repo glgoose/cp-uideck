@@ -1,0 +1,6 @@
+@use 'variables/colors' as *;
+@use 'utils' as *;
+
+header {
+  background-color: $crafted-bg;
+}
