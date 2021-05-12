@@ -1,5 +1,6 @@
 @use 'variables/colors' as *;
 @use 'utils' as *;
+@use 'variables/breakpoints' as *;
 
 header {
   background-color: $crafted-bg;
@@ -7,4 +8,41 @@ header {
 
 .navbar {
   @include flex;
+  align-items: center;
+  padding: 10px 0;
+  ul {
+    list-style-type: none;
+    @include flex;
+  }
+  .lni-menu {
+    font-size: 2rem;
+    margin-left: auto;
+    color: white;
+  }
+}
+
+.crafted {
+  color: white;
+  padding-top: 40px;
+}
+
+// Small Screen
+
+@media only screen and (max-width: $extra-small) {
+  .navbar-crafted {
+    width: 95%;
+    margin: auto;
+  }
+  .navbar a,
+  .crafted h1:nth-of-type(1),
+  .crafted img {
+    display: none;
+  }
+
+  // Large Screen
+}
+@media only screen and (min-width: $extra-small) {
+  .lni-menu {
+    display: none;
+  }
 }
