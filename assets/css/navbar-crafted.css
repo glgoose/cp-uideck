@@ -2,4 +2,8 @@ header {
   background-color: #0267f4;
 }
 
+.navbar {
+  display: flex;
+}
+
 /*# sourceMappingURL=navbar-crafted.css.map */

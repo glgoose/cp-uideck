@@ -4,3 +4,7 @@
 header {
   background-color: $crafted-bg;
 }
+
+.navbar {
+  @include flex;
+}
