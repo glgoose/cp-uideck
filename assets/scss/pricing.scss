@@ -1,0 +1,11 @@
+@use 'utils' as *;
+@use 'variables/breakpoints' as *;
+
+.pricing {
+  .pricing__cards {
+    @include flex;
+    @media (max-width: $extra-small) {
+      flex-direction: column;
+    }
+  }
+}

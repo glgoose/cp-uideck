@@ -1,0 +1,10 @@
+.pricing .pricing__cards {
+  display: flex;
+}
+@media (max-width: 576px) {
+  .pricing .pricing__cards {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=pricing.css.map */
