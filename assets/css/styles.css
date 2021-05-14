@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "LineIcons";
+  src: url("/assets/fonts/LineIcons.eot") format("eot");
+  src: url("/assets/fonts/LineIcons.ttf") format("ttf"), url("/assets/fonts/LineIcons.woff") format("woff"), url("/assets/fonts/LineIcons.woff2") format("woff2"), url("/assets/fonts/LineIcons.svg") format("svg");
+  font-style: normal;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -5,6 +15,8 @@ a {
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
