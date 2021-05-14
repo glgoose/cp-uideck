@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   padding: 100px 0;
-  .pricing__intro {
+  &__intro {
     padding: 0 20px 60px 20px;
     @media (min-width: $extra-small) {
       padding: 0 440px 60px 440px;
@@ -31,29 +31,31 @@
     flex-direction: row;
     justify-content: center;
   }
-  .pricing__card {
-    margin-top: 30px;
-    padding: 40px 0;
-    border-radius: 5px;
-    background: $pricing-card1;
-    background: linear-gradient(
-      180deg,
-      rgba(44, 215, 221, 1) 0%,
-      rgba(3, 104, 244, 1) 100%
-    );
-    @media (min-width: $extra-small) {
-      margin: 0 12px;
-      width: 25%;
+  .pricing__ {
+    &card {
+      margin-top: 30px;
+      padding: 40px 0;
+      border-radius: 5px;
+      background: $pricing-card1;
+      background: linear-gradient(
+        180deg,
+        rgba(44, 215, 221, 1) 0%,
+        rgba(3, 104, 244, 1) 100%
+      );
+      @media (min-width: $extra-small) {
+        margin: 0 12px;
+        width: 25%;
+      }
+      .price {
+        font-size: 2rem;
+      }
     }
-    .pricing__card-info {
+    &card-info {
       text-align: left;
       font-size: 0.7rem;
       p {
         padding: 15px 40px 0 40px;
       }
-    }
-    p span {
-      font-size: 2rem;
     }
   }
   img {

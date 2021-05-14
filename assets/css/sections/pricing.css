@@ -25,18 +25,18 @@
   align-items: center;
   padding: 100px 0;
 }
-.pricing .pricing__intro {
+.pricing__intro {
   padding: 0 20px 60px 20px;
 }
 @media (min-width: 576px) {
-  .pricing .pricing__intro {
+  .pricing__intro {
     padding: 0 440px 60px 440px;
   }
 }
-.pricing .pricing__intro h1 {
+.pricing__intro h1 {
   font-size: 2rem;
 }
-.pricing .pricing__intro p {
+.pricing__intro p {
   padding-top: 20px;
 }
 
@@ -65,15 +65,15 @@
     width: 25%;
   }
 }
-.pricing__cards .pricing__card .pricing__card-info {
+.pricing__cards .pricing__card .price {
+  font-size: 2rem;
+}
+.pricing__cards .pricing__card-info {
   text-align: left;
   font-size: 0.7rem;
 }
-.pricing__cards .pricing__card .pricing__card-info p {
+.pricing__cards .pricing__card-info p {
   padding: 15px 40px 0 40px;
-}
-.pricing__cards .pricing__card p span {
-  font-size: 2rem;
 }
 .pricing__cards img {
   width: 200px;
