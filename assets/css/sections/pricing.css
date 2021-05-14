@@ -1,0 +1,71 @@
+.pricing {
+  text-align: center;
+  background-color: #f2f6f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+.pricing .pricing__intro {
+  padding: 0 20px 60px 20px;
+}
+@media (min-width: 576px) {
+  .pricing .pricing__intro {
+    padding: 0 420px 60px 420px;
+  }
+}
+.pricing .pricing__intro p {
+  padding-top: 20px;
+}
+
+.pricing__cards {
+  color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .pricing__cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.pricing__cards .pricing__card {
+  margin-top: 30px;
+  padding: 40px 0;
+  border-radius: 5px;
+  background: #2cd7dd;
+  background: linear-gradient(180deg, #2cd7dd 0%, #0368f4 100%);
+}
+@media (min-width: 576px) {
+  .pricing__cards .pricing__card {
+    margin: 0 12px;
+    width: 25%;
+  }
+}
+.pricing__cards .pricing__card .pricing__card-info {
+  text-align: left;
+  font-size: 0.7rem;
+}
+.pricing__cards .pricing__card .pricing__card-info p {
+  padding: 15px 40px 0 40px;
+}
+.pricing__cards .pricing__card p span {
+  font-size: 2rem;
+}
+.pricing__cards img {
+  width: 200px;
+}
+.pricing__cards button {
+  margin-top: 30px;
+  border-radius: 30px;
+  padding: 12px;
+  text-transform: uppercase;
+  border: 2px solid white;
+  font-weight: 700;
+  background-color: white;
+  color: #0267f4;
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=pricing.css.map */

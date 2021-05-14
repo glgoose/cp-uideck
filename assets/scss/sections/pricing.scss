@@ -1,0 +1,71 @@
+@use '../utils' as *;
+@use '../variables/breakpoints' as *;
+@use '../variables/colors' as *;
+
+.pricing {
+  text-align: center;
+  background-color: $lightgrey-bg;
+  @include flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  .pricing__intro {
+    padding: 0 20px 60px 20px;
+    @media (min-width: $extra-small) {
+      padding: 0 420px 60px 420px;
+    }
+    p {
+      padding-top: 20px;
+    }
+  }
+}
+
+.pricing__cards {
+  color: white;
+  width: 90%;
+  @include flex;
+  flex-direction: column;
+  @media (min-width: $extra-small) {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .pricing__card {
+    margin-top: 30px;
+    padding: 40px 0;
+    border-radius: 5px;
+    background: $pricing-card1;
+    background: linear-gradient(
+      180deg,
+      rgba(44, 215, 221, 1) 0%,
+      rgba(3, 104, 244, 1) 100%
+    );
+    @media (min-width: $extra-small) {
+      margin: 0 12px;
+      width: 25%;
+    }
+    .pricing__card-info {
+      text-align: left;
+      font-size: 0.7rem;
+      p {
+        padding: 15px 40px 0 40px;
+      }
+    }
+    p span {
+      font-size: 2rem;
+    }
+  }
+  img {
+    width: 200px;
+  }
+  button {
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 12px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    font-weight: 700;
+    background-color: white;
+    color: $crafted-bg;
+    margin-right: 5px;
+  }
+}
