@@ -1,5 +1,18 @@
-$lightgrey-bg: #f2f6f7;
+@use '../vars' as *;
+@use '../utils' as *;
 
 .clients {
   background-color: $lightgrey-bg;
+  text-align: left;
+  padding: 0 15px;
+  h3 {
+    color: $crafted-bg;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  .lni {
+    font-size: 3rem;
+    color: rgba($color: #000000, $alpha: 0.2);
+  }
 }

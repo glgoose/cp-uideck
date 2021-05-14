@@ -1,5 +1,38 @@
+@font-face {
+  font-family: "LineIcons";
+  src: url("/assets/fonts/LineIcons.eot") format("eot");
+  src: url("/assets/fonts/LineIcons.ttf") format("ttf"), url("/assets/fonts/LineIcons.woff") format("woff"), url("/assets/fonts/LineIcons.woff2") format("woff2"), url("/assets/fonts/LineIcons.svg") format("svg");
+  font-style: normal;
+}
+.container {
+  margin: auto;
+}
+@media only screen and (min-width: 576px) {
+  .container {
+    width: 85%;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .clients {
   background-color: #f2f6f7;
+  text-align: left;
+  padding: 0 15px;
+}
+.clients h3 {
+  color: #0267f4;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.clients .lni {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=clients.css.map */

@@ -172,6 +172,18 @@ header .crafted__right-arrow {
 }
 .clients {
   background-color: #f2f6f7;
+  text-align: left;
+  padding: 0 15px;
+}
+.clients h3 {
+  color: #0267f4;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.clients .lni {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 body {
