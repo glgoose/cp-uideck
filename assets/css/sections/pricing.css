@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "LineIcons";
+  src: url("/assets/fonts/LineIcons.eot") format("eot");
+  src: url("/assets/fonts/LineIcons.ttf") format("ttf"), url("/assets/fonts/LineIcons.woff") format("woff"), url("/assets/fonts/LineIcons.woff2") format("woff2"), url("/assets/fonts/LineIcons.svg") format("svg");
+  font-style: normal;
+}
+@media only screen and (min-width: 576px) {
+  .container {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .pricing {
   text-align: center;
   background-color: #f2f6f7;
@@ -11,8 +30,11 @@
 }
 @media (min-width: 576px) {
   .pricing .pricing__intro {
-    padding: 0 420px 60px 420px;
+    padding: 0 440px 60px 440px;
   }
+}
+.pricing .pricing__intro h1 {
+  font-size: 2rem;
 }
 .pricing .pricing__intro p {
   padding-top: 20px;

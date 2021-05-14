@@ -1,9 +1,0 @@
-$font: LineIcons;
-
-@font-face {
-  font-family: 'LineIcons';
-  src: url('/assets/fonts/LineIcons.eot') format('eot'); // IE9 Compat Mode
-  src: url('/assets/fonts/LineIcons.ttf') format('ttf'), url('/assets/fonts/LineIcons.woff') format('woff'),
-    url('/assets/fonts/LineIcons.woff2') format('woff2'), url('/assets/fonts/LineIcons.svg') format('svg'); // legacy iOS
-  font-style: normal;
-}

@@ -1,6 +1,5 @@
 @use '../utils' as *;
-@use '../variables/breakpoints' as *;
-@use '../variables/colors' as *;
+@use '../vars' as *;
 
 .pricing {
   text-align: center;
@@ -12,7 +11,10 @@
   .pricing__intro {
     padding: 0 20px 60px 20px;
     @media (min-width: $extra-small) {
-      padding: 0 420px 60px 420px;
+      padding: 0 440px 60px 440px;
+    }
+    h1 {
+      font-size: 2rem;
     }
     p {
       padding-top: 20px;
