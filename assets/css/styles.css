@@ -16,7 +16,55 @@ a {
   src: url("/assets/fonts/LineIcons.ttf") format("ttf"), url("/assets/fonts/LineIcons.woff") format("woff"), url("/assets/fonts/LineIcons.woff2") format("woff2"), url("/assets/fonts/LineIcons.svg") format("svg");
   font-style: normal;
 }
-@media only screen and (min-width: 576px) {
+.services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+@media (min-width: 576px) {
+  .services__cards {
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+}
+.services__cards .services__card {
+  background-color: #ffffff;
+  padding: 2em 1.2em 3em 1.2em;
+}
+.services__cards .services__card .card__header {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.services__cards .services__card .card__header .lni {
+  font-size: 4.5rem;
+  color: #0267f4;
+  background-image: url("/assets/img/f-shape-1.svg");
+  background-repeat: no-repeat;
+  background-size: 4.5rem;
+  background-position: 50% 30%;
+}
+.services__cards .services__card .card__header h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.services__cards .services__card p {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.services__cards .services__card a {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0267f4;
+}
+
+.container {
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+}
+@media (min-width: 576px) {
   .container {
     padding-right: 5vw;
     padding-left: 5vw;

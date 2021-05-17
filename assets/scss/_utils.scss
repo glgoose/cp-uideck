@@ -5,7 +5,10 @@
 }
 
 .container {
-  @media only screen and (min-width: $extra-small) {
+  padding-right: $padding-x / 2;
+  padding-left: $padding-x / 2;
+
+  @media (min-width: $extra-small) {
     padding-right: $padding-x;
     padding-left: $padding-x;
   }
