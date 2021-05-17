@@ -1,6 +1,5 @@
-@use 'variables/colors' as *;
-@use 'utils' as *;
-@use 'variables/breakpoints' as *;
+@use '../vars' as *;
+@use '../utils' as *;
 
 header {
   background-color: $crafted-bg;
