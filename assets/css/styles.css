@@ -16,6 +16,23 @@ a {
   src: url("/assets/fonts/LineIcons.ttf") format("ttf"), url("/assets/fonts/LineIcons.woff") format("woff"), url("/assets/fonts/LineIcons.woff2") format("woff2"), url("/assets/fonts/LineIcons.svg") format("svg");
   font-style: normal;
 }
+.container {
+  padding-right: 7.5vw;
+  padding-left: 7.5vw;
+}
+@media (min-width: 576px) {
+  .container {
+    padding-right: 15vw;
+    padding-left: 15vw;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .services__cards {
   display: flex;
   flex-wrap: wrap;
@@ -58,23 +75,6 @@ a {
   font-size: 1.2rem;
   font-weight: 800;
   color: #0267f4;
-}
-
-.container {
-  padding-right: 7.5vw;
-  padding-left: 7.5vw;
-}
-@media (min-width: 576px) {
-  .container {
-    padding-right: 15vw;
-    padding-left: 15vw;
-  }
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .featured__work {
