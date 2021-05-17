@@ -16,6 +16,37 @@ a {
   src: url("/assets/fonts/LineIcons.ttf") format("ttf"), url("/assets/fonts/LineIcons.woff") format("woff"), url("/assets/fonts/LineIcons.woff2") format("woff2"), url("/assets/fonts/LineIcons.svg") format("svg");
   font-style: normal;
 }
+footer {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 100px 0 100px;
+}
+footer a:link {
+  color: white;
+}
+footer a:hover {
+  color: blue;
+}
+
+a:visited {
+  color: white;
+}
+
+p:last-child {
+  padding-top: 30px;
+}
+
+.social {
+  padding: 30px 0 20px;
+}
+
+.footer_designed a {
+  color: blue;
+}
+
 @media only screen and (min-width: 576px) {
   .container {
     padding-right: 5vw;
