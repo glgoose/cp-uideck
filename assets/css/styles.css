@@ -507,6 +507,67 @@ header .crafted__right-arrow {
   }
 }
 
+.meet {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.meet h2 {
+  margin-bottom: 20px;
+}
+.meet p {
+  font-size: 1.2rem;
+  color: #6c6c6c;
+}
+.meet h4 {
+  color: #0f65f1;
+}
+.meet .meet__images {
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.meet .meet__images img {
+  width: 95%;
+}
+
+@media (min-width: 576px) {
+  .meet {
+    display: flex;
+    font-size: 1.5rem;
+  }
+
+  .meet__images {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7rem;
+  }
+  .meet__images .meet__image {
+    width: 30%;
+    box-shadow: 0px 2px 2px 2px #faf7f7;
+  }
+  .meet__images .meet__image .header {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  .meet__images .meet__image .header h3 {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .meet__images .meet__image .header h4 {
+    font-weight: 400;
+    font-size: 0.7rem;
+  }
+}
 footer {
   background-color: #141414;
   display: flex;
