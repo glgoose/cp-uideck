@@ -121,10 +121,10 @@ header {
     width: 90%;
     margin: auto;
   }
-  header {
-    clip-path: polygon(0 30%, 30% 0, 70% 100%, 30% 100%);
-    color: rgba($color: white, $alpha: 0.2);
-  }
+  // header {
+  //   clip-path: polygon(0 30%, 30% 0, 70% 100%, 30% 100%);
+  //   color: rgba($color: white, $alpha: 0.2);
+  // }
   .navbar a,
   .navbar button,
   .crafted h1:nth-of-type(1),
