@@ -1,6 +1,6 @@
 @use 'reset';
 @use 'vars' as *;
-// @use 'sections/featured';
+@use 'sections/featured';
 @use 'sections/navbar-crafted';
 @use 'sections/pricing';
 @use 'utils';
@@ -13,6 +13,7 @@ body {
 h2 {
   font-size: 2rem;
   padding-bottom: 20px;
+  font-weight: 600;
 }
 
 main > section {
@@ -24,5 +25,16 @@ main > section {
 
   &:nth-child(odd) {
     background-color: $lightgrey-bg;
+  }
+}
+
+.summary {
+  color: $grey-1;
+  font-size: 1.2rem;
+  margin: 0 0.8rem 3rem 0.8rem;
+
+  @media (min-width: $extra-small) {
+    width: 55ch;
+    font-size: 1rem;
   }
 }
