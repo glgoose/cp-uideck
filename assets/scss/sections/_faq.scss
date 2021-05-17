@@ -1,0 +1,55 @@
+@use '../vars' as *;
+@use '../utils' as *;
+
+.asked-questions {
+  text-align: left;
+
+  @media only screen and (max-width: $extra-small) {
+    padding: 100px 15px;
+  }
+  @include flex;
+  @media only screen and (min-width: $extra-small) {
+    flex-direction: row;
+  }
+  &__left {
+    @include flex;
+    flex-direction: column;
+    @media only screen and (min-width: $extra-small) {
+      width: 50%;
+    }
+    h3 {
+      color: $crafted-bg;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      text-transform: capitalize;
+      padding-right: 50px;
+    }
+    h4 {
+      text-transform: capitalize;
+      font-weight: 500;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      .lni {
+        float: right;
+      }
+    }
+    p {
+      font-size: 0.8rem;
+      padding: 0 40px 18px 20px;
+    }
+  }
+  &__right {
+    img {
+      width: 100vw;
+      @media only screen and (min-width: $extra-small) {
+        width: 40vw;
+        padding-left: 50px;
+      }
+      padding-top: 50px;
+    }
+  }
+}

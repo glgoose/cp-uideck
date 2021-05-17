@@ -449,6 +449,64 @@ header .crafted__right-arrow {
     padding-top: 5px;
   }
 }
+.asked-questions {
+  text-align: left;
+  display: flex;
+}
+@media only screen and (max-width: 576px) {
+  .asked-questions {
+    padding: 100px 15px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .asked-questions {
+    flex-direction: row;
+  }
+}
+.asked-questions__left {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 576px) {
+  .asked-questions__left {
+    width: 50%;
+  }
+}
+.asked-questions__left h3 {
+  color: #0267f4;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.asked-questions__left h2 {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  padding-right: 50px;
+}
+.asked-questions__left h4 {
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+.asked-questions__left h4 .lni {
+  float: right;
+}
+.asked-questions__left p {
+  font-size: 0.8rem;
+  padding: 0 40px 18px 20px;
+}
+.asked-questions__right img {
+  width: 100vw;
+  padding-top: 50px;
+}
+@media only screen and (min-width: 576px) {
+  .asked-questions__right img {
+    width: 40vw;
+    padding-left: 50px;
+  }
+}
+
 footer {
   background-color: #141414;
   display: flex;
