@@ -4,7 +4,9 @@
 .clients {
   background-color: $lightgrey-bg;
   text-align: left;
-  padding: 100px 15px;
+  @media only screen and (max-width: $extra-small) {
+    padding: 100px 15px;
+  }
   h3 {
     color: $crafted-bg;
     text-transform: uppercase;
@@ -23,6 +25,14 @@
     .lni-line-dashed {
       color: #d4e1f0;
       font-size: 3rem;
+    }
+    p {
+      &:nth-of-type(2) {
+        padding-top: 30px;
+      }
+    }
+    h2 {
+      padding-bottom: 0;
     }
   }
 }
@@ -67,18 +77,64 @@
   }
 }
 
-.clients__bg {
+.clients {
   .lni-quotation {
     transform: rotate(180deg);
     color: #d4e1f0;
     font-size: 10rem;
-    // position: absolute;
-    // z-index: -100;
   }
 }
 
 @media only screen and (min-width: $extra-small) {
   .clients {
     @include flex;
+    flex-direction: row;
+    .lni-quotation {
+      position: absolute;
+      top: 140px;
+      right: 400px;
+    }
+    &__arrows {
+      display: block;
+      color: lightgray;
+      font-size: 1.2rem;
+      padding-top: 50px;
+    }
+    &__card {
+      width: 100vw;
+      box-shadow: -40px -40px 0px 0px #e8ecef;
+      background-color: white;
+      q {
+        font-size: 1.2rem;
+      }
+    }
+    &__testimonials {
+      padding-right: 120px;
+      padding-bottom: 0;
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .clients__card-bottom-right {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    .clients__card-stars {
+      padding-top: 0px;
+    }
+    &-name {
+      padding-right: 80px;
+    }
+    &-reviews {
+      float: right;
+    }
+    .clients__card-stars .lni-star-filled {
+      font-size: 0.8rem;
+    }
+    &-reviews p {
+      font-size: 0.8rem;
+      padding-top: 5px;
+    }
   }
 }
