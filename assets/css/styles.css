@@ -169,11 +169,6 @@ header .crafted__right-arrow {
   }
 }
 .pricing {
-  text-align: center;
-  background-color: #f2f6f7;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 100px 0;
 }
 .pricing__intro {
@@ -183,9 +178,6 @@ header .crafted__right-arrow {
   .pricing__intro {
     padding: 0 440px 60px 440px;
   }
-}
-.pricing__intro p {
-  padding-top: 20px;
 }
 
 .pricing__cards {
@@ -244,6 +236,18 @@ body {
 
 h2 {
   font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  text-align: center;
+}
+main > section:nth-child(odd) {
+  background-color: #f2f6f7;
 }
 
 /*# sourceMappingURL=styles.css.map */
