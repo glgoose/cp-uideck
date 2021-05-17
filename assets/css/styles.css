@@ -29,16 +29,6 @@ a {
   align-items: center;
 }
 
-.featured .summary {
-  color: #6c6c6c;
-  font-size: 1.2rem;
-  margin: 0 0.8rem 3rem 0.8rem;
-}
-@media (min-width: 576px) {
-  .featured .summary {
-    width: 55ch;
-  }
-}
 .featured__work {
   display: flex;
   flex-wrap: wrap;
@@ -286,6 +276,7 @@ body {
 h2 {
   font-size: 2rem;
   padding-bottom: 20px;
+  font-weight: 600;
 }
 
 main > section {
@@ -297,6 +288,18 @@ main > section {
 }
 main > section:nth-child(odd) {
   background-color: #f2f6f7;
+}
+
+.summary {
+  color: #6c6c6c;
+  font-size: 1.2rem;
+  margin: 0 0.8rem 3rem 0.8rem;
+}
+@media (min-width: 576px) {
+  .summary {
+    width: 55ch;
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

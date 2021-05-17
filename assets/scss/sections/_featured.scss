@@ -2,16 +2,6 @@
 @use '../vars' as *;
 
 .featured {
-  .summary {
-    color: $grey-1;
-    font-size: 1.2rem;
-    margin: 0 0.8rem 3rem 0.8rem;
-
-    @media (min-width: $extra-small) {
-      width: 55ch;
-    }
-  }
-
   &__work {
     display: flex;
     flex-wrap: wrap;
