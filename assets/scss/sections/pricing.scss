@@ -1,0 +1,75 @@
+@use '../utils' as *;
+@use '../vars' as *;
+
+.pricing {
+  text-align: center;
+  background-color: $lightgrey-bg;
+  @include flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  &__intro {
+    padding: 0 20px 60px 20px;
+    @media (min-width: $extra-small) {
+      padding: 0 440px 60px 440px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      padding-top: 20px;
+    }
+  }
+}
+
+.pricing__cards {
+  color: white;
+  width: 90%;
+  @include flex;
+  flex-direction: column;
+  @media (min-width: $extra-small) {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .pricing__ {
+    &card {
+      margin-top: 30px;
+      padding: 40px 0;
+      border-radius: 5px;
+      background: $pricing-card1;
+      background: linear-gradient(
+        180deg,
+        rgba(44, 215, 221, 1) 0%,
+        rgba(3, 104, 244, 1) 100%
+      );
+      @media (min-width: $extra-small) {
+        margin: 0 12px;
+        width: 25%;
+      }
+      .price {
+        font-size: 2rem;
+      }
+    }
+    &card-info {
+      text-align: left;
+      font-size: 0.7rem;
+      p {
+        padding: 15px 40px 0 40px;
+      }
+    }
+  }
+  img {
+    width: 200px;
+  }
+  button {
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 12px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    font-weight: 700;
+    background-color: white;
+    color: $crafted-bg;
+    margin-right: 5px;
+  }
+}

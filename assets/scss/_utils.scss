@@ -6,9 +6,9 @@
 
 .container {
   @media only screen and (min-width: $extra-small) {
-    width: $container-width;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
   }
-  margin: auto;
 }
 
 .center {

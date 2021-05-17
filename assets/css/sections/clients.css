@@ -4,12 +4,10 @@
   src: url("/assets/fonts/LineIcons.ttf") format("ttf"), url("/assets/fonts/LineIcons.woff") format("woff"), url("/assets/fonts/LineIcons.woff2") format("woff2"), url("/assets/fonts/LineIcons.svg") format("svg");
   font-style: normal;
 }
-.container {
-  margin: auto;
-}
 @media only screen and (min-width: 576px) {
   .container {
-    width: 85%;
+    padding-right: 5vw;
+    padding-left: 5vw;
   }
 }
 
@@ -22,7 +20,7 @@
 .clients {
   background-color: #f2f6f7;
   text-align: left;
-  padding: 0 15px;
+  padding: 100px 15px;
 }
 .clients h3 {
   color: #0267f4;
@@ -30,9 +28,19 @@
   font-weight: 300;
   font-size: 0.9rem;
 }
+.clients h2 {
+  padding-right: 100px;
+}
 .clients .lni {
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.2);
+}
+.clients__card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 50px;
+  padding: 30px;
 }
 
 /*# sourceMappingURL=clients.css.map */
