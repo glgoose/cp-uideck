@@ -61,13 +61,13 @@ a {
 }
 
 .container {
-  padding-right: 2.5vw;
-  padding-left: 2.5vw;
+  padding-right: 7.5vw;
+  padding-left: 7.5vw;
 }
 @media (min-width: 576px) {
   .container {
-    padding-right: 5vw;
-    padding-left: 5vw;
+    padding-right: 15vw;
+    padding-left: 15vw;
   }
 }
 
@@ -315,6 +315,169 @@ header .crafted__right-arrow {
   background-color: white;
   color: #0267f4;
   margin-right: 5px;
+}
+
+.clients {
+  background-color: #f2f6f7;
+  text-align: left;
+}
+@media only screen and (max-width: 576px) {
+  .clients {
+    padding: 100px 15px;
+  }
+}
+.clients h3 {
+  color: #0267f4;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.clients h2 {
+  padding-right: 100px;
+}
+.clients__arrows {
+  display: none;
+}
+.clients__testimonials {
+  padding-bottom: 80px;
+}
+.clients__testimonials .lni-line-dashed {
+  color: #d4e1f0;
+  font-size: 3rem;
+}
+.clients__testimonials p:nth-of-type(2) {
+  padding-top: 30px;
+}
+.clients__testimonials h2 {
+  padding-bottom: 0;
+}
+
+.clients__card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 50px;
+  padding: 40px 30px;
+  box-shadow: 0px -40px 0px 0px #e8ecef;
+}
+.clients__card hr {
+  border: 1px solid #f2f6f7;
+  margin: 30px 0 50px 0;
+}
+.clients__card-bottom {
+  display: flex;
+}
+.clients__card-bottom img {
+  border-radius: 50%;
+  height: 70px;
+}
+.clients__card-bottom-right {
+  padding-left: 30px;
+}
+.clients__card-bottom-right .clients__card-stars {
+  padding-top: 30px;
+}
+.clients__card-bottom-right .clients__card-stars .lni-star-filled {
+  font-size: 1rem;
+  color: #ffb400;
+}
+.clients__card-bottom-right p:nth-of-type(2) {
+  font-size: 0.8rem;
+  color: lightgray;
+}
+.clients__card-bottom-right p:nth-of-type(3) {
+  font-size: 0.8rem;
+}
+
+.clients .lni-quotation {
+  transform: rotate(180deg);
+  color: #d4e1f0;
+  font-size: 10rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .clients {
+    display: flex;
+    flex-direction: row;
+  }
+  .clients .lni-quotation {
+    position: absolute;
+    top: 140px;
+    right: 400px;
+  }
+  .clients__arrows {
+    display: block;
+    color: lightgray;
+    font-size: 1.2rem;
+    padding-top: 50px;
+  }
+  .clients__card {
+    width: 100vw;
+    box-shadow: -40px -40px 0px 0px #e8ecef;
+    background-color: white;
+  }
+  .clients__card q {
+    font-size: 1.2rem;
+  }
+  .clients__testimonials {
+    padding-right: 120px;
+    padding-bottom: 0;
+  }
+  .clients__testimonials p {
+    font-size: 0.9rem;
+  }
+
+  .clients__card-bottom-right {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+  }
+  .clients__card-bottom-right .clients__card-stars {
+    padding-top: 0px;
+  }
+  .clients__card-bottom-right-name {
+    padding-right: 80px;
+  }
+  .clients__card-bottom-right-reviews {
+    float: right;
+  }
+  .clients__card-bottom-right .clients__card-stars .lni-star-filled {
+    font-size: 0.8rem;
+  }
+  .clients__card-bottom-right-reviews p {
+    font-size: 0.8rem;
+    padding-top: 5px;
+  }
+}
+footer {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 100px 0 100px;
+}
+footer a:link {
+  color: white;
+}
+footer a:hover {
+  color: blue;
+}
+
+a:visited {
+  color: white;
+}
+
+p:last-child {
+  padding-top: 30px;
+}
+
+.social {
+  padding: 30px 0 20px;
+}
+
+.footer_designed a {
+  color: blue;
 }
 
 body {
