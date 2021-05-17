@@ -57,7 +57,7 @@ a {
 .services__cards .services__card .card__header .lni {
   font-size: 4.5rem;
   color: #0267f4;
-  background-image: url("./assets/img/f-shape-1.svg");
+  background-image: url("../img/f-shape-1.svg");
   background-repeat: no-repeat;
   background-size: 4.5rem;
   background-position: 50% 30%;
@@ -549,6 +549,7 @@ header .crafted__right-arrow {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
+    gap: 1.2rem;
     font-size: 0.7rem;
   }
   .meet__images .meet__image {
