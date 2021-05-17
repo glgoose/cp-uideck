@@ -490,6 +490,69 @@ p:last-child {
   color: blue;
 }
 
+.message {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 100px 0;
+  width: 95%;
+}
+.message h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.message h2 .lni {
+  padding-right: 10px;
+}
+.message__name-mail {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 576px) {
+  .message__name-mail {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .message__name-mail input {
+    width: 460px;
+  }
+  .message__name-mail input:nth-of-type(1) {
+    padding-right: 50px;
+  }
+}
+.message__div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.message__div .form-label {
+  font-size: 0.6rem;
+  padding-bottom: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.message__div input,
+.message__div textarea {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.message button {
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: white;
+  background-color: #0267f4;
+  margin-top: 20px;
+}
+.message button a {
+  color: #0267f4;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
