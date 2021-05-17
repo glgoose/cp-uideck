@@ -31,16 +31,64 @@
 .clients h2 {
   padding-right: 100px;
 }
-.clients .lni {
-  font-size: 3rem;
-  color: rgba(0, 0, 0, 0.2);
+.clients__arrows {
+  display: none;
 }
+.clients__testimonials {
+  padding-bottom: 80px;
+}
+.clients__testimonials .lni-line-dashed {
+  color: #d4e1f0;
+  font-size: 3rem;
+}
+
 .clients__card {
   display: flex;
   flex-direction: column;
   background-color: white;
   border-radius: 50px;
-  padding: 30px;
+  padding: 40px 30px;
+  box-shadow: 0px -40px 0px 0px #e8ecef;
+}
+.clients__card hr {
+  border: 1px solid #f2f6f7;
+  margin: 30px 0 50px 0;
+}
+.clients__card-bottom {
+  display: flex;
+}
+.clients__card-bottom img {
+  border-radius: 50%;
+  height: 70px;
+}
+.clients__card-bottom-right {
+  padding-left: 30px;
+}
+.clients__card-bottom-right .clients__card-stars {
+  padding-top: 30px;
+}
+.clients__card-bottom-right .clients__card-stars .lni-star-filled {
+  font-size: 1rem;
+  color: #ffb400;
+}
+.clients__card-bottom-right p:nth-of-type(2) {
+  font-size: 0.8rem;
+  color: lightgray;
+}
+.clients__card-bottom-right p:nth-of-type(3) {
+  font-size: 0.8rem;
+}
+
+.clients__bg .lni-quotation {
+  transform: rotate(180deg);
+  color: #d4e1f0;
+  font-size: 10rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .clients {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=clients.css.map */
