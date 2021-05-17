@@ -88,13 +88,12 @@ a {
   }
 }
 .featured__work .work__filters {
-  width: 95%;
   font-weight: bold;
   color: #6c6c6c;
 }
 @media (min-width: 576px) {
   .featured__work .work__filters {
-    width: 300px;
+    width: 275px;
     margin-right: 2rem;
     flex-grow: 1;
     flex-shrink: 0;
@@ -104,7 +103,6 @@ a {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin: 4em 0;
 }
 .featured__work .work__filters ol > li {
   text-transform: uppercase;
@@ -114,6 +112,10 @@ a {
 .featured__work .work__filters ol > li:first-child {
   background: linear-gradient(270deg, #2bd8dd 0%, #0368f4 100%);
   color: #f2f6f7;
+}
+.featured__work .work__image-grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
