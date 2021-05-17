@@ -29,6 +29,55 @@ a {
   align-items: center;
 }
 
+.featured .summary {
+  color: #6c6c6c;
+  font-size: 1.2rem;
+  margin: 0 0.8rem 3rem 0.8rem;
+}
+@media (min-width: 576px) {
+  .featured .summary {
+    width: 55ch;
+  }
+}
+.featured__work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .featured__work {
+    flex-wrap: nowrap;
+  }
+}
+.featured__work .work__filters {
+  width: 95%;
+  font-weight: bold;
+  color: #6c6c6c;
+}
+@media (min-width: 576px) {
+  .featured__work .work__filters {
+    width: 300px;
+    margin-right: 2rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
+.featured__work .work__filters ol {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 4em 0;
+}
+.featured__work .work__filters ol > li {
+  text-transform: uppercase;
+  padding: 0.8em 0;
+  border-radius: 25px;
+}
+.featured__work .work__filters ol > li:first-child {
+  background: linear-gradient(270deg, #2bd8dd 0%, #0368f4 100%);
+  color: #f2f6f7;
+}
+
 header {
   background-color: #0267f4;
   display: flex;
@@ -196,8 +245,8 @@ header .crafted__right-arrow {
   margin-top: 30px;
   padding: 40px 0;
   border-radius: 5px;
-  background: #2cd7dd;
-  background: linear-gradient(180deg, #2cd7dd 0%, #0368f4 100%);
+  background: #2bd8dd;
+  background: linear-gradient(180deg, #2bd8dd 0%, #0368f4 100%);
 }
 @media (min-width: 576px) {
   .pricing__cards .pricing__card {

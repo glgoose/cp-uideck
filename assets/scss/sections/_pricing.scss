@@ -28,8 +28,8 @@
       background: $pricing-card1;
       background: linear-gradient(
         180deg,
-        rgba(44, 215, 221, 1) 0%,
-        rgba(3, 104, 244, 1) 100%
+        $pricing-card1 0%,
+        $pricing-card2 100%
       );
       @media (min-width: $extra-small) {
         margin: 0 12px;
