@@ -1,9 +1,10 @@
 @use 'reset';
 @use 'vars' as *;
+@use 'utils';
+@use 'sections/services';
 @use 'sections/featured';
 @use 'sections/navbar-crafted';
 @use 'sections/pricing';
-@use 'utils';
 @use 'sections/clients';
 @use 'sections/faq';
 @use 'sections/footer';

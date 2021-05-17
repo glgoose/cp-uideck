@@ -1,0 +1,53 @@
+@use '../vars' as *;
+
+.services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  @media (min-width: $extra-small) {
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+
+  .services__card {
+    background-color: $white-0;
+    padding: 2em 1.2em 3em 1.2em;
+
+    .card__header {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      margin-bottom: 1.5rem;
+
+      .lni {
+        font-size: 4.5rem;
+        color: $crafted-bg;
+        background: {
+          image: url('/assets/img/f-shape-1.svg');
+          repeat: no-repeat;
+          size: 4.5rem;
+          position: 50% 30%;
+        }
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+    }
+
+    p {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      text-transform: uppercase;
+      font: {
+        size: 1.2rem;
+        weight: 800;
+      }
+      color: $crafted-bg;
+    }
+  }
+}
