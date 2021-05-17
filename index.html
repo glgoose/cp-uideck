@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Wireframe 3</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/navbar-crafted.css" />
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/meet.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -16,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/9b3121d7e2.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -54,7 +54,7 @@
     </header>
 
     <main>
-      <section class="services">
+      <section class="services container center">
         <h2>Our Services</h2>
         <p>
           Stop wasting time and money designing and managing a website that
@@ -83,7 +83,7 @@
         </div>
       </section>
 
-      <section class="featured">
+      <section class="featured container center">
         <h2>Featured Works</h2>
         <p>
           Stop wasting time and money designing and managing a website that
@@ -115,41 +115,50 @@
         </div>
       </section>
 
-      <section class="pricing">
-        <h1>Pricing Plans</h1>
+
+      <section class="pricing container center">
+        <div class="pricing__intro">
+        <h2>Pricing Plans</h2>
         <p>
           Stop wasting time and money designing and managing a website that
           doesn't get results. Happiness guaranteed!
         </p>
+      </div>
         <div class="pricing__cards">
           <div class="pricing__card">
             <img src="assets/img/basic.svg" alt="basic" />
             <h4>Basic</h4>
-            <p>$ 199/month</p>
-            <p>Carefully crafted components</p>
-            <p>Amazing page examples</p>
+            <p><span class='price'>$ 199</span>/month</p>
+            <div class="pricing__card-info">
+              <p>Carefully crafted components</p>
+              <p>Amazing page examples</p>
+            </div>
             <a href="#"><button>Get Started</button></a>
           </div>
           <div class="pricing__card">
             <img src="assets/img/pro.svg" alt="pro" />
             <h4>Pro</h4>
-            <p>$ 399/month</p>
-            <p>Carefully crafted components</p>
-            <p>Amazing page examples</p>
+            <p><span class='price'>$ 399</span>/month</p>
+            <div class="pricing__card-info">
+              <p>Carefully crafted components</p>
+              <p>Amazing page examples</p>
+            </div>
             <a href="#"><button>Get Started</button></a>
           </div>
           <div class="pricing__card">
             <img src="assets/img/enterprise.svg" alt="enterprise" />
             <h4>Enterprise</h4>
-            <p>$ 699/month</p>
-            <p>Carefully crafted components</p>
-            <p>Amazing page examples</p>
+            <p><span class='price'>$ 699</span>/month</p>
+            <div class="pricing__card-info">
+              <p>Carefully crafted components</p>
+              <p>Amazing page examples</p>
+            </div>
             <a href="#"><button>Get Started</button></a>
           </div>
         </div>
       </section>
 
-      <section class="asked-questions">
+      <section class="asked-questions container center">
         <div class="asked-questions__left">
           <details>
             <summary>Frequently Asked Question One<span>&#8250;</span></summary>
@@ -193,7 +202,7 @@
         </div>
       </section>
 
-      <section class="clients">
+      <section class="clients container center">
         <div class="clients__testimonials">
           <h3>Testimonials</h3>
           <h2>What Clients Says About Us</h2>
@@ -234,8 +243,10 @@
         </div>
       </section>
 
-      <section class="meet-the-team">
-        <h2>Meet The Team</h2>
+
+      <section class="meet-the-team container center">
+        <h2>Meet the team</h2>
+
         <p>
           Stop wasting time and money designing and managing a website that
           doesn't get results. Happiness guaranteed!
@@ -260,11 +271,15 @@
             <h3>Mark A.Parker</h3>
             <h4>UX Designer</h4>
           </div>
+
         
-      </div>
+   
+
+        </div>
+
       </section>
 
-      <section class="contact">
+      <section class="contact container center" id="contact">
         <p>
           Sop wasting time and money designing and managing a website that
           doesn't get results. Happiness guaranteed!
@@ -293,27 +308,41 @@
             >
           </div>
         </div>
-      </section>
 
-      <section class="message">
-        <h2><i class="lni lni-envelope"></i><strong>Leave</strong> a Message.</h2>
-        <form>
-          <div class="message__div">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" placeholder="Name">
-          </div>
-          <div class="message__div">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" placeholder="Email">
-          </div>
-          <div class="message__div">
-            <label for="message-area" class="form-label">Message</label> <br>
-            <textarea name="message-area" cols="30" rows="5" placeholder="Message"></textarea>
-          </div>
-          <button type="submit" class="form-btn">Send Message</button>
-        </form>
+        <h3><i class="lni lni-envelope"></i><strong>Leave</strong> a Message.</h2>
+          <form>
+            <div class="message__div">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="message__div">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="message__div">
+              <label for="message-area" class="form-label">Message</label> <br>
+              <textarea name="message-area" cols="30" rows="5" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="form-btn">Send Message</button>
+          </form>
       </section>
     </main>
     </main>
+
+    <footer>
+
+      <img src="assets/img/logo-2.svg">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f" href="#"></i></a> 
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <a href="tel:+8801234567890">+8801234567890</a>
+      <p><a href="mailto:support@uideck.com">support@uideck.com</a></p>
+      <p>Designed by <a href="#">UIdeck </a>and Built-with <a href="#">Ayro UI</a></p>
+
+    </footer>
+    
   </body>
 </html>
