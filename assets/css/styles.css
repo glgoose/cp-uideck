@@ -89,6 +89,7 @@ a {
 .featured__work .work__filters {
   font-weight: bold;
   color: #6c6c6c;
+  text-align: center;
 }
 @media (min-width: 576px) {
   .featured__work .work__filters {
