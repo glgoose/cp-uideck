@@ -9,3 +9,20 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  text-align: center;
+
+  &:nth-child(odd) {
+    background-color: $lightgrey-bg;
+  }
+}
