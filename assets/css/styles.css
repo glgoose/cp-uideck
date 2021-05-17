@@ -184,9 +184,6 @@ header .crafted__right-arrow {
     padding: 0 440px 60px 440px;
   }
 }
-.pricing__intro h1 {
-  font-size: 2rem;
-}
 .pricing__intro p {
   padding-top: 20px;
 }
@@ -243,6 +240,10 @@ header .crafted__right-arrow {
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
