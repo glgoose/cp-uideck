@@ -1,1 +1,52 @@
 @use '../utils';
+@use '../vars' as *;
+
+.featured {
+  &__work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (min-width: $extra-small) {
+      flex-wrap: nowrap;
+    }
+
+    .work__filters {
+      @media (min-width: $extra-small) {
+        width: 275px;
+        margin-right: 2rem;
+        flex-grow: 1;
+        flex-shrink: 0;
+      }
+
+      font-weight: bold;
+      color: $grey-1;
+      text-align: center;
+
+      ol {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+
+        > li {
+          text-transform: uppercase;
+          padding: 0.8em 0;
+          border-radius: 25px;
+
+          &:first-child {
+            background: linear-gradient(
+              270deg,
+              $pricing-card1 0%,
+              $pricing-card2 100%
+            );
+            color: $lightgrey-bg;
+          }
+        }
+      }
+    }
+
+    .work__image-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

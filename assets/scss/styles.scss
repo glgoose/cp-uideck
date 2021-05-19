@@ -1,9 +1,15 @@
 @use 'reset';
 @use 'vars' as *;
-// @use 'sections/featured';
+@use 'utils';
+@use 'sections/services';
+@use 'sections/featured';
 @use 'sections/navbar-crafted';
 @use 'sections/pricing';
-@use 'utils';
+@use 'sections/clients';
+@use 'sections/faq';
+@use 'sections/meet';
+@use 'sections/footer';
+@use 'sections/leave-message';
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -12,6 +18,7 @@ body {
 h2 {
   font-size: 2rem;
   padding-bottom: 20px;
+  font-weight: 600;
 }
 
 main > section {
@@ -19,9 +26,21 @@ main > section {
   flex-direction: column;
   align-items: center;
   padding: 100px 0;
-  text-align: center;
+  // text-align: center;
 
   &:nth-child(odd) {
     background-color: $lightgrey-bg;
+  }
+}
+
+.summary {
+  color: $grey-1;
+  font-size: 1.2rem;
+  margin: 0 0.8rem 3rem 0.8rem;
+  text-align: center;
+
+  @media (min-width: $extra-small) {
+    width: 55ch;
+    font-size: 1rem;
   }
 }
