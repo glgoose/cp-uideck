@@ -116,6 +116,10 @@ a {
   background: linear-gradient(270deg, #2bd8dd 0%, #0368f4 100%);
   color: #f2f6f7;
 }
+.featured__filters ol > li:hover {
+  background: linear-gradient(270deg, #2bd8dd 0%, #0368f4 100%);
+  color: #f2f6f7;
+}
 .featured__image-grid {
   display: flex;
   flex-wrap: wrap;
