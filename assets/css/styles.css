@@ -174,6 +174,7 @@ header .crafted__right-arrow {
   border-radius: 5px;
   border: none;
   font-weight: 700;
+  border: 2px solid white;
 }
 .navbar button a {
   color: #0267f4;
@@ -182,7 +183,10 @@ header .crafted__right-arrow {
 }
 .navbar button:hover {
   background-color: #0267f4;
+<<<<<<< HEAD
+=======
   border: 2px solid white;
+>>>>>>> 10ac845b7c014a8857b3a59923f1e73bc6fe0056
 }
 .navbar button:hover a {
   color: white;
@@ -204,11 +208,6 @@ header .crafted__right-arrow {
   display: flex;
   align-items: center;
 }
-@media (min-width: 576px) {
-  .crafted {
-    padding: 40px 0 10px 0;
-  }
-}
 .crafted h1:nth-of-type(1) {
   font-size: 4rem;
 }
@@ -218,11 +217,6 @@ header .crafted__right-arrow {
 }
 .crafted p {
   padding: 0 30px 30px 0;
-}
-@media (min-width: 576px) {
-  .crafted p {
-    padding: 20px 80px 20px 0;
-  }
 }
 .crafted img {
   width: 500px;
@@ -276,6 +270,26 @@ header .crafted__right-arrow {
   }
 }
 @media only screen and (min-width: 576px) {
+  .crafted {
+    padding: 40px 0 0px 0;
+  }
+  .crafted p {
+    padding: 20px 80px 20px 0;
+  }
+  .crafted img {
+    position: relative;
+    overflow: hidden;
+    transform: skew(340deg);
+  }
+  .crafted .bg-gradient {
+    background: #0662e4;
+    background: linear-gradient(180deg, rgba(0, 108, 237, 0.4) 0%, rgba(65, 167, 236, 0.4) 100%);
+    transform: skew(20deg);
+  }
+  .crafted__get-started {
+    margin-right: 15px;
+  }
+
   .navbar-crafted {
     width: 70%;
     margin: auto;
