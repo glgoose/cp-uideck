@@ -2,58 +2,41 @@
 @use '../vars' as *;
 
 .footer {
-  background-color: #141414;
+  background-color: $black-0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
-  padding: 100px 0 100px;
+  color: $white;
+  padding-top: 8.5em;
+  padding-bottom: 6em;
 
-  a:hover {
-    color: blue;
+  a:any-link {
+    color: inherit;
   }
-  a:visited {
-    color: white;
+
+  &__social {
+    padding-top: 3em;
+    padding-bottom: 2em;
+
+    i {
+      font-size: 1.6em;
+      padding: 0 0.2em;
+    }
   }
-  p:last-child {
+
+  &__support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    line-height: 2em;
+  }
+
+  &__text {
     padding-top: 30px;
-  }
-}
 
-.social {
-  padding: 60px 0 20px;
-
-  a{
-    list-style-type: none;
-    margin: 0 5px;
-  }
-}
-.support{
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  font-weight: 600;
-    a:hover {
-    color: #007bff;
-  }
-  a{
-    margin:9px 0 0 0;
-  }
-   a:link {
-    color: white;
-  }
-}
-.footer_designed {
-  p{
-  padding-top: 30px;
-}
-  a:visited{
-    color: #007bff;
-  }
-  a:hover{
-    color: #0054ad;
-  }
-  a:link{
-    color: #007bff;
+    span {
+      color: $pricing-card1;
+    }
   }
 }
