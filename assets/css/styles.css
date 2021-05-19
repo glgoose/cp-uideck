@@ -111,6 +111,8 @@ a {
   text-transform: uppercase;
   padding: 0.8em 0;
   border-radius: 25px;
+  margin-bottom: 4px;
+  transition: all 0.3s ease-out 0s;
 }
 .featured__filters ol > li:first-child {
   background: linear-gradient(270deg, #2bd8dd 0%, #0368f4 100%);
@@ -120,8 +122,6 @@ a {
   background: linear-gradient(270deg, #2bd8dd 0%, #0368f4 100%);
   color: #f2f6f7;
   transition: all 0.3s ease-out 0s;
-  margin-top: 4px;
-  margin-bottom: 4px;
 }
 .featured__image-grid {
   display: flex;
