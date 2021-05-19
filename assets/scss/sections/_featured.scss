@@ -40,6 +40,14 @@
           );
           color: $lightgrey-bg;
         }
+        &:hover {
+          background: linear-gradient(
+            270deg,
+            $pricing-card1 0%,
+            $pricing-card2 100%
+          );
+          color: $lightgrey-bg;
+        }
       }
     }
   }
