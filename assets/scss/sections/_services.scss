@@ -33,6 +33,10 @@
         font-size: 1.8rem;
         font-weight: 400;
       }
+      &:hover{
+        color: #007bff;
+        transition: 0.3s;
+      }
     }
 
     p {
