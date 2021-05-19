@@ -352,11 +352,6 @@ header .crafted__right-arrow {
   background-color: #f2f6f7;
   text-align: left;
 }
-@media only screen and (max-width: 576px) {
-  .clients {
-    padding: 100px 15px;
-  }
-}
 .clients h3 {
   color: #0267f4;
   text-transform: uppercase;
