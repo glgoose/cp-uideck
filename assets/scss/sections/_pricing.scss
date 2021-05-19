@@ -1,16 +1,6 @@
 @use '../utils' as *;
 @use '../vars' as *;
 
-.pricing {
-  padding: 100px 0;
-  &__intro {
-    padding: 0 20px 60px 20px;
-    @media (min-width: $extra-small) {
-      padding: 0 440px 60px 440px;
-    }
-  }
-}
-
 .pricing__cards {
   color: white;
   width: 90%;
@@ -23,7 +13,8 @@
   .pricing__ {
     &card {
       margin-top: 30px;
-      padding: 40px 0;
+      padding: 2em 0;
+      text-align: center;
       border-radius: 5px;
       background: $pricing-card1;
       background: linear-gradient(
