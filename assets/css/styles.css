@@ -124,7 +124,6 @@ a {
 @media (min-width: 576px) {
   .featured__image {
     flex: 0 1 33.3333333333%;
-    max-width: 33.3333333333%;
   }
   .featured__image img {
     display: block;
@@ -601,6 +600,10 @@ header .crafted__right-arrow {
     font-size: 0.7rem;
   }
 }
+.map-container {
+  width: 100%;
+}
+
 .footer {
   background-color: #141414;
   display: flex;
