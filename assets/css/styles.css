@@ -183,10 +183,6 @@ header .crafted__right-arrow {
 }
 .navbar button:hover {
   background-color: #0267f4;
-<<<<<<< HEAD
-=======
-  border: 2px solid white;
->>>>>>> 10ac845b7c014a8857b3a59923f1e73bc6fe0056
 }
 .navbar button:hover a {
   color: white;
@@ -302,7 +298,7 @@ header .crafted__right-arrow {
 }
 .pricing__cards {
   color: white;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -322,8 +318,8 @@ header .crafted__right-arrow {
 }
 @media (min-width: 576px) {
   .pricing__cards .pricing__card {
-    margin: 0 12px;
-    width: 25%;
+    margin: 0px 8px;
+    width: 33.3333333333%;
   }
 }
 .pricing__cards .pricing__card .price {

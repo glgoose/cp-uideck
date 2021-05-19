@@ -24,7 +24,7 @@
       );
       @media (min-width: $extra-small) {
         margin: 0px 8px;
-        width: 33.33%;
+        width: (100% / 3);
       }
       .price {
         font-size: 2rem;
