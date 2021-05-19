@@ -602,6 +602,60 @@ header .crafted__right-arrow {
   width: 100%;
 }
 
+.contact__items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+  flex-grow: 1;
+  width: 100%;
+  gap: 2em;
+}
+@media (min-width: 576px) {
+  .contact__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 576px) {
+  .contact__items {
+    align-items: center;
+  }
+}
+.contact__item {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.contact__item a {
+  color: inherit;
+}
+.contact__item address {
+  font-style: inherit;
+}
+.contact__icon,
+.contact .contact__icon--bg-blue,
+.contact .contact__icon--bg-red,
+.contact .contact__icon--bg-black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1em;
+  height: 2.1em;
+  font-size: 1.5em;
+  color: #fff;
+  border-radius: 50%;
+}
+.contact__icon--bg-black {
+  background-color: #000;
+}
+.contact__icon--bg-red {
+  background-color: #fc3832;
+}
+.contact__icon--bg-blue {
+  background-color: #0368f4;
+}
+
 .footer {
   background-color: #141414;
   display: flex;
