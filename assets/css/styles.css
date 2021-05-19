@@ -119,6 +119,9 @@ a {
 .featured__filters ol > li:hover {
   background: linear-gradient(270deg, #2bd8dd 0%, #0368f4 100%);
   color: #f2f6f7;
+  transition: all 0.3s ease-out 0s;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 .featured__image-grid {
   display: flex;
