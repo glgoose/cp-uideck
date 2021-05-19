@@ -6,32 +6,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
+
     @media (min-width: $extra-small) {
       flex-wrap: nowrap;
     }
+  }
+  &__filters {
+    flex-grow: 1;
+    @media (min-width: $extra-small) {
+      flex: 0 0 25%;
+    }
 
-    .work__filters {
-      @media (min-width: $extra-small) {
-        width: 275px;
-        margin-right: 2rem;
-        flex-grow: 1;
-        flex-shrink: 0;
-      }
+    font-weight: bold;
+    color: $grey-1;
+    text-align: center;
 
-      font-weight: bold;
-      color: $grey-1;
-      text-align: center;
+    ol {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
 
-      ol {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
+      > li {
+        text-transform: uppercase;
+        padding: 0.8em 0;
+        border-radius: 25px;
 
-        > li {
-          text-transform: uppercase;
-          padding: 0.8em 0;
-          border-radius: 25px;
-          &:hover {
+        &:hover {
             background: linear-gradient(
               270deg,
               $pricing-card1 0%,
@@ -39,22 +40,37 @@
             );
             color: $lightgrey-bg;
           }
-          &:first-child {
-            background: linear-gradient(
-              270deg,
-              $pricing-card1 0%,
-              $pricing-card2 100%
-            );
-            color: $lightgrey-bg;
-          }
-          
+        &:first-child {
+          background: linear-gradient(
+            270deg,
+            $pricing-card1 0%,
+            $pricing-card2 100%
+          );
+          color: $lightgrey-bg;
         }
       }
     }
+  }
 
-    .work__image-grid {
-      display: flex;
-      flex-wrap: wrap;
+  &__image-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $extra-small) {
+      flex: 0 0 75%;
+    }
+  }
+
+  &__image {
+    @media (min-width: $extra-small) {
+      flex: 0 1 (100% / 3);
+      max-width: (100% / 3);
+      // margin-bottom: -7px; // hack to fix
+
+      img {
+        display: block;
+        width: 100%;
+      }
     }
   }
 }
