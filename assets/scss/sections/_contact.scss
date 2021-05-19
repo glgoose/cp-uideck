@@ -1,3 +1,63 @@
+@use '../vars' as *;
+
 .map-container {
+  width: 100%;
+}
+
+@mixin icon-bg($color-name, $color) {
+  &--bg-#{$color-name} {
+    @extend %icon;
+    background-color: $color;
+  }
+}
+
+.contact {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $extra-small) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    margin-top: 4em;
+    flex-grow: 1;
     width: 100%;
+    gap: 2em;
+
+    @media (min-width: $extra-small) {
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+
+    a {
+      color: inherit;
+    }
+
+    address {
+      font-style: inherit;
+    }
+  }
+
+  &__icon,
+  %icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1em;
+    height: 2.1em;
+    font-size: 1.5em;
+    color: $white;
+    border-radius: 50%;
+
+    @include icon-bg('black', $black);
+    @include icon-bg('red', $red-0);
+    @include icon-bg('blue', $pricing-card2);
+  }
 }
