@@ -51,6 +51,13 @@ header {
       font-size: 0.8rem;
     }
   }
+  button:hover {
+      background-color: $crafted-bg;
+      border: 2px solid white;
+      a {
+        color: white;
+      }
+  }
   .navbar__links {
     @include flex;
     li a {
@@ -99,6 +106,7 @@ header {
     border: 2px solid white;
     font-weight: 700;
   }
+  
   .crafted__get-started {
     background-color: white;
     color: $crafted-bg;
@@ -106,10 +114,20 @@ header {
     @media (min-width: $extra-small) {
       margin-right: 15px;
     }
+    
+  }
+  .crafted__get-started:hover {
+      background-color: $crafted-bg;
+      color:white;
   }
   .crafted__download {
     background-color: inherit;
     color: white;
+  }
+  .crafted__download:hover {
+    background-color: white;
+    color: $crafted-bg;
+
   }
 }
 
