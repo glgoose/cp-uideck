@@ -32,12 +32,13 @@ header {
   }
   .lni-menu {
     font-size: 1.5rem;
-    // margin-left: auto;
-
     color: white;
   }
   img {
     width: 60px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   button {
     padding: 12px;

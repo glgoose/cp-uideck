@@ -176,6 +176,9 @@ header .crafted__right-arrow {
 .navbar img {
   width: 60px;
 }
+.navbar img:hover {
+  cursor: pointer;
+}
 .navbar button {
   padding: 12px;
   border-radius: 5px;
@@ -806,6 +809,15 @@ main > section:nth-child(odd) {
     width: 55ch;
     font-size: 1rem;
   }
+}
+
+button,
+button:hover {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
 /*# sourceMappingURL=styles.css.map */
