@@ -5,8 +5,8 @@
 }
 
 .container {
-  padding-right: $padding-x / 2;
-  padding-left: $padding-x / 2;
+  padding-right: $padding-x / 4;
+  padding-left: $padding-x / 4;
 
   @media (min-width: $extra-small) {
     padding-right: $padding-x;

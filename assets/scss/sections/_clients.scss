@@ -4,9 +4,9 @@
 .clients {
   background-color: $lightgrey-bg;
   text-align: left;
-  @media only screen and (max-width: $extra-small) {
-    padding: 100px 15px;
-  }
+  // @media only screen and (max-width: $extra-small) {
+  //   padding: 100px 15px;
+  // }
   h3 {
     color: $crafted-bg;
     text-transform: uppercase;
