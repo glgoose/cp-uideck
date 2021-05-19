@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "LineIcons";
+  src: url("/assets/fonts/LineIcons.eot") format("eot");
+  src: url("/assets/fonts/LineIcons.ttf") format("ttf"), url("/assets/fonts/LineIcons.woff") format("woff"), url("/assets/fonts/LineIcons.woff2") format("woff2"), url("/assets/fonts/LineIcons.svg") format("svg");
+  font-style: normal;
+}
+.container {
+  padding-right: 7.5vw;
+  padding-left: 7.5vw;
+}
+@media (min-width: 576px) {
+  .container {
+    padding-right: 15vw;
+    padding-left: 15vw;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured__work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .featured__work {
+    flex-wrap: nowrap;
+  }
+}
+.featured__work .work__filters {
+  font-weight: bold;
+  color: #6c6c6c;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .featured__work .work__filters {
+    width: 275px;
+    margin-right: 2rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
+.featured__work .work__filters ol {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.featured__work .work__filters ol > li {
+  text-transform: uppercase;
+  padding: 0.8em 0;
+  border-radius: 25px;
+}
+.featured__work .work__filters ol > li:hover {
+  background: linear-gradient(270deg, #2bd8dd 0%, #0368f4 100%);
+  color: #f2f6f7;
+}
+.featured__work .work__filters ol > li:first-child {
+  background: linear-gradient(270deg, #2bd8dd 0%, #0368f4 100%);
+  color: #f2f6f7;
+}
+.featured__work .work__image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=featured.css.map */
