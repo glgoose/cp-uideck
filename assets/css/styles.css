@@ -610,9 +610,6 @@ header .crafted__right-arrow {
   color: white;
   padding: 100px 0 100px;
 }
-.footer a:link {
-  color: white;
-}
 .footer a:hover {
   color: blue;
 }
@@ -643,15 +640,21 @@ header .crafted__right-arrow {
 .support a {
   margin: 9px 0 0 0;
 }
+.support a:link {
+  color: white;
+}
 
 .footer_designed p {
   padding-top: 30px;
 }
-.footer_designed a {
+.footer_designed a:visited {
   color: #007bff;
 }
 .footer_designed a:hover {
   color: #0054ad;
+}
+.footer_designed a:link {
+  color: #007bff;
 }
 
 .message {

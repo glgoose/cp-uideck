@@ -8,9 +8,6 @@
   align-items: center;
   color: white;
   padding: 100px 0 100px;
-  a:link {
-    color: white;
-  }
 
   a:hover {
     color: blue;
@@ -42,15 +39,21 @@
   a{
     margin:9px 0 0 0;
   }
+   a:link {
+    color: white;
+  }
 }
 .footer_designed {
   p{
   padding-top: 30px;
 }
-  a {
+  a:visited{
     color: #007bff;
   }
   a:hover{
     color: #0054ad;
+  }
+  a:link{
+    color: #007bff;
   }
 }
