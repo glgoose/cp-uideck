@@ -17,8 +17,8 @@ a {
   font-style: normal;
 }
 .container {
-  padding-right: 7.5vw;
-  padding-left: 7.5vw;
+  padding-right: 3.75vw;
+  padding-left: 3.75vw;
 }
 @media (min-width: 576px) {
   .container {
@@ -483,11 +483,6 @@ header .crafted__right-arrow {
 .asked-questions {
   text-align: left;
   display: flex;
-}
-@media only screen and (max-width: 576px) {
-  .asked-questions {
-    padding: 100px 15px;
-  }
 }
 @media only screen and (min-width: 576px) {
   .asked-questions {

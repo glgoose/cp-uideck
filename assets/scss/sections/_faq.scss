@@ -3,10 +3,6 @@
 
 .asked-questions {
   text-align: left;
-
-  @media only screen and (max-width: $extra-small) {
-    padding: 100px 15px;
-  }
   @include flex;
   @media only screen and (min-width: $extra-small) {
     flex-direction: row;
