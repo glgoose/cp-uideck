@@ -125,9 +125,9 @@ a {
   .featured__image {
     flex: 0 1 33.3333333333%;
     max-width: 33.3333333333%;
-    margin-bottom: -7px;
   }
   .featured__image img {
+    display: block;
     width: 100%;
   }
 }
@@ -179,6 +179,13 @@ header .crafted__right-arrow {
   color: #0267f4;
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+.navbar button:hover {
+  background-color: #0267f4;
+  border: 2px solid white;
+}
+.navbar button:hover a {
+  color: white;
 }
 .navbar .navbar__links {
   display: flex;
@@ -241,9 +248,17 @@ header .crafted__right-arrow {
     margin-right: 15px;
   }
 }
+.crafted__buttons .crafted__get-started:hover {
+  background-color: #0267f4;
+  color: white;
+}
 .crafted__buttons .crafted__download {
   background-color: inherit;
   color: white;
+}
+.crafted__buttons .crafted__download:hover {
+  background-color: white;
+  color: #0267f4;
 }
 
 @media only screen and (max-width: 576px) {

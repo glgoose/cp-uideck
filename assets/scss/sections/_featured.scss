@@ -57,9 +57,10 @@
     @media (min-width: $extra-small) {
       flex: 0 1 (100% / 3);
       max-width: (100% / 3);
-      margin-bottom: -7px; // hack to fix
+      // margin-bottom: -7px; // hack to fix
 
       img {
+        display: block;
         width: 100%;
       }
     }
