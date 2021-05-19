@@ -124,7 +124,6 @@ a {
 @media (min-width: 576px) {
   .featured__image {
     flex: 0 1 33.3333333333%;
-    max-width: 33.3333333333%;
   }
   .featured__image img {
     display: block;
@@ -183,10 +182,6 @@ header .crafted__right-arrow {
 }
 .navbar button:hover {
   background-color: #0267f4;
-<<<<<<< HEAD
-=======
-  border: 2px solid white;
->>>>>>> 10ac845b7c014a8857b3a59923f1e73bc6fe0056
 }
 .navbar button:hover a {
   color: white;
