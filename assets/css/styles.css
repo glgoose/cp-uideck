@@ -65,6 +65,10 @@ a {
   font-size: 1.8rem;
   font-weight: 400;
 }
+.services__cards .services__card .card__header:hover {
+  color: #007bff;
+  transition: 0.3s;
+}
 .services__cards .services__card p {
   text-align: left;
   margin-bottom: 2rem;
