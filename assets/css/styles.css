@@ -589,6 +589,10 @@ header .crafted__right-arrow {
     font-size: 0.7rem;
   }
 }
+.map-container {
+  width: 100%;
+}
+
 .footer {
   background-color: #141414;
   display: flex;
