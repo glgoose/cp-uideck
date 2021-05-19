@@ -39,6 +39,7 @@
             $pricing-card2 100%
           );
           color: $lightgrey-bg;
+          
         }
         &:hover {
           background: linear-gradient(
@@ -47,6 +48,7 @@
             $pricing-card2 100%
           );
           color: $lightgrey-bg;
+          transition: all .3s ease-out 0s;
         }
       }
     }
