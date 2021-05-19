@@ -40,7 +40,6 @@ header {
     width: 60px;
   }
   button {
-    // margin-left: auto;
     padding: 12px;
     border-radius: 5px;
     border: none;
@@ -68,9 +67,6 @@ header {
   padding: 80px 0;
   @include flex;
   align-items: center;
-  @media (min-width: $extra-small) {
-    padding: 40px 0 10px 0;
-  }
   h1:nth-of-type(1) {
     font-size: 4rem;
   }
@@ -80,9 +76,6 @@ header {
   }
   p {
     padding: 0 30px 30px 0;
-    @media (min-width: $extra-small) {
-      padding: 20px 80px 20px 0;
-    }
   }
   img {
     width: 500px;
@@ -103,9 +96,6 @@ header {
     background-color: white;
     color: $crafted-bg;
     margin-right: 5px;
-    @media (min-width: $extra-small) {
-      margin-right: 15px;
-    }
   }
   .crafted__download {
     background-color: inherit;
@@ -120,10 +110,6 @@ header {
     width: 90%;
     margin: auto;
   }
-  // header {
-  //   clip-path: polygon(0 30%, 30% 0, 70% 100%, 30% 100%);
-  //   color: rgba($color: white, $alpha: 0.2);
-  // }
   .navbar a,
   .navbar button,
   .crafted h1:nth-of-type(1),
@@ -135,6 +121,29 @@ header {
 
 // Large Screen
 @media only screen and (min-width: $extra-small) {
+  .crafted {
+    padding: 40px 0 0px 0;
+    p {
+      padding: 20px 80px 20px 0;
+    }
+    img {
+      position: relative;
+      overflow: hidden;
+      transform: skew(340deg);
+    }
+    .bg-gradient {
+      background: #0662e4;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 108, 237, 0.4) 0%,
+        rgba(65, 167, 236, 0.4) 100%
+      );
+      transform: skew(20deg);
+    }
+    &__get-started {
+      margin-right: 15px;
+    }
+  }
   .navbar-crafted {
     width: 70%;
     margin: auto;
