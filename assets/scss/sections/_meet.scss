@@ -1,8 +1,6 @@
 @use '../vars' as *;
 
 .meet {
-  max-width: 90%;
-  margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
@@ -21,13 +19,35 @@
     color: #0f65f1;
   }
   .meet__images {
-    max-width: 90%;
+    // max-width: 90%;
     display: flex;
-    flex-wrap: wrap;
+    @media (max-width: $extra-small) {
+      flex-wrap: wrap;
+    }
     align-items: center;
     justify-content: center;
     img {
-      width: 95%;
+      width: 100%;
+    }
+    .meet__image {
+      box-shadow: 0 8px 16px 0 rgb(72 127 255 / 10%);
+      margin-top: 2rem;
+      .header {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        h3 {
+          font: {
+            weight: 500;
+            size: 1.2rem;
+          }
+        }
+        h4 {
+          font: {
+            weight: 400;
+            size: 0.8rem;
+          }
+        }
+      }
     }
   }
 }
@@ -40,30 +60,12 @@
     margin-top: 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 1.2rem;
     font-size: 0.7rem;
-
     .meet__image {
-      width: 30%;
-      box-shadow: 0px 2px 2px 2px #faf7f7;
-
-      .header {
-        padding-top: 0.5rem;
-        padding-bottom: 1rem;
-
-        h3 {
-          font: {
-            weight: 500;
-            size: 1rem;
-          }
-        }
-        h4 {
-          font: {
-            weight: 400;
-            size: 0.7rem;
-          }
-        }
-      }
+      width: (100%/3);
+      margin-top: 0px;
     }
   }
 }
