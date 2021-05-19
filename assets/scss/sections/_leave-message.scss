@@ -6,7 +6,7 @@
   flex-direction: column;
   text-align: left;
   padding: 100px 0;
-  width: 95%;
+  width: 100%;
   h2 {
     font-size: 1.5rem;
     text-transform: capitalize;
@@ -22,7 +22,7 @@
       flex-direction: row;
       justify-content: space-between;
       input {
-        width: 460px;
+        width: 34vw;
       }
       input:nth-of-type(1) {
         padding-right: 50px;
@@ -33,6 +33,7 @@
     @include flex;
     flex-direction: column;
     padding: 10px 0;
+    position: relative;
     .form-label {
       font-size: 0.6rem;
       padding-bottom: 5px;
@@ -42,6 +43,13 @@
     textarea {
       padding: 10px;
       font-family: 'Poppins', sans-serif;
+    }
+    .lni {
+      left: auto;
+      right: 14px;
+      top: 41px;
+      position: absolute;
+      color: #6c6c6c;
     }
   }
   button {
@@ -54,6 +62,11 @@
     color: white;
     background-color: $crafted-bg;
     margin-top: 20px;
+    border: 2px solid #0067f4;
+    &:hover {
+      color: #0067f4;
+      background-color: transparent;
+    }
     a {
       color: $crafted-bg;
       text-transform: uppercase;

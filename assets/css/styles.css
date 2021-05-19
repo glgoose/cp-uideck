@@ -660,7 +660,7 @@ header .crafted__right-arrow {
   flex-direction: column;
   text-align: left;
   padding: 100px 0;
-  width: 95%;
+  width: 100%;
 }
 .message h2 {
   font-size: 1.5rem;
@@ -680,7 +680,7 @@ header .crafted__right-arrow {
     justify-content: space-between;
   }
   .message__name-mail input {
-    width: 460px;
+    width: 34vw;
   }
   .message__name-mail input:nth-of-type(1) {
     padding-right: 50px;
@@ -690,6 +690,7 @@ header .crafted__right-arrow {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
+  position: relative;
 }
 .message__div .form-label {
   font-size: 0.6rem;
@@ -701,6 +702,13 @@ header .crafted__right-arrow {
   padding: 10px;
   font-family: "Poppins", sans-serif;
 }
+.message__div .lni {
+  left: auto;
+  right: 14px;
+  top: 41px;
+  position: absolute;
+  color: #6c6c6c;
+}
 .message button {
   padding: 12px 20px;
   border-radius: 5px;
@@ -711,6 +719,11 @@ header .crafted__right-arrow {
   color: white;
   background-color: #0267f4;
   margin-top: 20px;
+  border: 2px solid #0067f4;
+}
+.message button:hover {
+  color: #0067f4;
+  background-color: transparent;
 }
 .message button a {
   color: #0267f4;
