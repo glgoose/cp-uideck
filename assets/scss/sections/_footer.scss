@@ -11,10 +11,18 @@
   a:link {
     color: white;
   }
+
+  a:hover {
+    color: blue;
+  }
+  a:visited {
+    color: white;
+  }
+  p:last-child {
+    padding-top: 30px;
+  }
 }
-a:visited {
-  color: white;
-}
+
 .social {
   padding: 60px 0 20px;
 

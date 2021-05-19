@@ -583,16 +583,21 @@ header .crafted__right-arrow {
   color: white;
 }
 
-a:visited {
-  color: white;
-}
-
 .social {
   padding: 60px 0 20px;
 }
 .social a {
   list-style-type: none;
   margin: 0 5px;
+
+footer a:hover {
+  color: blue;
+}
+footer a:visited {
+  color: white;
+}
+footer p:last-child {
+  padding-top: 30px;
 }
 
 .support {
