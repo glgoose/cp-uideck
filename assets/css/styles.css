@@ -670,54 +670,33 @@ header .crafted__right-arrow {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
-  padding: 100px 0 100px;
+  color: #fff;
+  padding-top: 8.5em;
+  padding-bottom: 6em;
 }
-.footer a:hover {
-  color: blue;
+.footer a:any-link {
+  color: inherit;
 }
-.footer a:visited {
-  color: white;
+.footer__social {
+  padding-top: 3em;
+  padding-bottom: 2em;
 }
-.footer p:last-child {
-  padding-top: 30px;
+.footer__social i {
+  font-size: 1.6em;
+  padding: 0 0.2em;
 }
-
-.social {
-  padding: 60px 0 20px;
-}
-.social a {
-  list-style-type: none;
-  margin: 0 5px;
-}
-
-.support {
+.footer__support {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: 600;
+  line-height: 2em;
 }
-.support a:hover {
-  color: #007bff;
-}
-.support a {
-  margin: 9px 0 0 0;
-}
-.support a:link {
-  color: white;
-}
-
-.footer_designed p {
+.footer__text {
   padding-top: 30px;
 }
-.footer_designed a:visited {
-  color: #007bff;
-}
-.footer_designed a:hover {
-  color: #0054ad;
-}
-.footer_designed a:link {
-  color: #007bff;
+.footer__text span {
+  color: #2bd8dd;
 }
 
 .message {
