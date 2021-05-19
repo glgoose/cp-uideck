@@ -53,5 +53,8 @@
     background-color: white;
     color: $crafted-bg;
     margin-right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

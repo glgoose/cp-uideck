@@ -347,6 +347,9 @@ header .crafted__right-arrow {
   color: #0267f4;
   margin-right: 5px;
 }
+.pricing__cards button:hover {
+  cursor: pointer;
+}
 
 .clients {
   background-color: #f2f6f7;
