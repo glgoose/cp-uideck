@@ -3,7 +3,7 @@
 
 .pricing__cards {
   color: white;
-  width: 90%;
+  width: 100%;
   @include flex;
   flex-direction: column;
   @media (min-width: $extra-small) {
@@ -23,8 +23,8 @@
         $pricing-card2 100%
       );
       @media (min-width: $extra-small) {
-        margin: 0 12px;
-        width: 25%;
+        margin: 0px 8px;
+        width: 33.33%;
       }
       .price {
         font-size: 2rem;
