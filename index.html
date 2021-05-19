@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/contact-map.css">
+    <link rel="stylesheet" href="assets/css/contact-map.css" />
     <script
       src="https://kit.fontawesome.com/9b3121d7e2.js"
       crossorigin="anonymous"
@@ -129,7 +129,7 @@
           doesn't get results. Happiness guaranteed!
         </p>
         <div class="featured__work">
-          <div class="work__filters">
+          <div class="featured__filters">
             <ol>
               <li>All Work</li>
               <li>Branding</li>
@@ -138,32 +138,44 @@
               <li>Research</li>
             </ol>
           </div>
-          <div class="work__image-grid">
-            <img src="assets/img/featured-1.png" alt="featured work 1" /><img
-              src="assets/img/featured-2.png"
-              alt="featured work 2"
-            /><img src="assets/img/featured-3.png" alt="featured work 3" /><img
-              src="assets/img/featured-4.png"
-              alt="featured work 4"
-            /><img src="assets/img/featured-5.png" alt="featured work 5" /><img
-              src="assets/img/featured-6.png"
-              alt="featured work 6"
-            /><img src="assets/img/featured-7.png" alt="featured work 7" /><img
-              src="assets/img/featured-8.png"
-              alt="featured work 8"
-            /><img src="assets/img/featured-9.png" alt="featured work 9" />
+          <div class="featured__image-grid">
+            <div class="featured__image">
+              <img src="assets/img/featured-1.png" alt="featured work 1" />
+            </div>
+            <div class="featured__image">
+              <img src="assets/img/featured-2.png" alt="featured work 2" />
+            </div>
+            <div class="featured__image">
+              <img src="assets/img/featured-3.png" alt="featured work 3" />
+            </div>
+            <div class="featured__image">
+              <img src="assets/img/featured-4.png" alt="featured work 4" />
+            </div>
+            <div class="featured__image">
+              <img src="assets/img/featured-5.png" alt="featured work 5" />
+            </div>
+            <div class="featured__image">
+              <img src="assets/img/featured-6.png" alt="featured work 6" />
+            </div>
+            <div class="featured__image">
+              <img src="assets/img/featured-7.png" alt="featured work 7" />
+            </div>
+            <div class="featured__image">
+              <img src="assets/img/featured-8.png" alt="featured work 8" />
+            </div>
+            <div class="featured__image">
+              <img src="assets/img/featured-9.png" alt="featured work 9" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="pricing container center" id="pricing">
-        <div class="pricing__intro">
-          <h2>Pricing Plans</h2>
-          <p class="summary">
-            Stop wasting time and money designing and managing a website that
-            doesn't get results. Happiness guaranteed!
-          </p>
-        </div>
+      <section class="pricing container center">
+        <h2>Pricing Plans</h2>
+        <p class="summary">
+          Stop wasting time and money designing and managing a website that
+          doesn't get results. Happiness guaranteed!
+        </p>
         <div class="pricing__cards">
           <div class="pricing__card">
             <img src="assets/img/basic.svg" alt="basic" />
@@ -249,7 +261,6 @@
             <i class="lni lni-arrow-right"></i>
           </div>
         </div>
-        <!-- <i class="lni lni-quotation"></i> -->
         <div class="clients__card">
           <q
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
@@ -317,12 +328,18 @@
           Stop wasting time and money designing and managing a website that
           doesn't get results. Happiness guaranteed!
         </p>
-        <div class="map-container" >
-          <iframe scrolling="no" marginheight="0" marginwidth="0"
-                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Becentral+(BeCode)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                  width="100%" height="500" frameborder="0"></iframe><a
-                  href="https://www.maps.ie/draw-radius-circle-map/"></a>
-      </div>
+        <div class="map-container">
+          <iframe
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Becentral+(BeCode)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            width="100%"
+            height="500"
+            frameborder="0"
+          ></iframe
+          ><a href="https://www.maps.ie/draw-radius-circle-map/"></a>
+        </div>
         <div class="contact__info">
           <div class="info__address">
             <img src="assets/img/location.svg" alt="location" />
@@ -378,19 +395,25 @@
     </main>
 
     <footer>
-      <img src="assets/img/logo-2.svg" />
-      <div class="social">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+      <div class="footer">
+        <a href="#home"><img src="assets/img/logo.svg" alt="logo" /></a>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+        <div class="support">
+          <a href="tel:+8801234567890">+8801234567890</a>
+          <a href="mailto:support@uideck.com">support@uideck.com</a>
+        </div>
+        <div class="footer_designed">
+          <p>
+            Designed by <a href="#">UIdeck </a>and Built-with
+            <a href="#">Ayro UI</a>
+          </p>
+        </div>
       </div>
-      <a href="tel:+8801234567890">+8801234567890</a>
-      <p><a href="mailto:support@uideck.com">support@uideck.com</a></p>
-      <p class="footer_designed">
-        Designed by <a href="#">UIdeck </a>and Built-with
-        <a href="#">Ayro UI</a>
-      </p>
     </footer>
   </body>
 </html>
