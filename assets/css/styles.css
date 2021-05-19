@@ -297,7 +297,7 @@ header .crafted__right-arrow {
 }
 .pricing__cards {
   color: white;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -317,8 +317,8 @@ header .crafted__right-arrow {
 }
 @media (min-width: 576px) {
   .pricing__cards .pricing__card {
-    margin: 0 12px;
-    width: 25%;
+    margin: 0px 8px;
+    width: 33.3333333333%;
   }
 }
 .pricing__cards .pricing__card .price {
