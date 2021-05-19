@@ -585,12 +585,10 @@ footer a:link {
 footer a:hover {
   color: blue;
 }
-
-a:visited {
+footer a:visited {
   color: white;
 }
-
-p:last-child {
+footer p:last-child {
   padding-top: 30px;
 }
 
