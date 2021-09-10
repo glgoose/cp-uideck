@@ -2,7 +2,7 @@
 
 Goal: practise CSS/SASS & HTML
 
-Based on screenshots of a theme (smash) from uideck.com we rebuild the layout.
+Based on screenshots of a theme (smash) from uideck.com we rebuild the layout from scratch.
 
 ## Repo naming
 `CP-xxxx` **CP** stands for **Clone Project**  
