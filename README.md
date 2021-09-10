@@ -1,6 +1,8 @@
-# Clone Project: Theme for Fictional UIdeck.com
+# Clone Project: smash theme from UI deck
 
 Goal: practise CSS/SASS & HTML
+
+Based on screenshots of a theme (smash) from uideck.com we rebuild the layout.
 
 ## Repo naming
 `CP-xxxx` **CP** stands for **Clone Project**  
